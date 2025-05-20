@@ -1,0 +1,214 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(0, 0, 0);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           color: #000000;
+  }
+
+  
+  /* Header fixo com efeito de sombra */
+  header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #fcfbff;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, #1e2627 100%);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 4px 8px                                                                                                                                                                                                                                                                                                                                                                                                                                                    rgba(255, 253, 253, 0.2);
+  }
+  
+  header h1 {
+    margin-bottom: 5px;
+    font-size: 28px;
+  }
+  
+  header nav a {
+    margin: 0 15px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  header nav a:hover {
+    color: #dfd899;
+  }
+  
+  /* Estilo geral de seções */
+  section {
+    padding: 80px 20px 50px;
+    margin-top: 80px;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 12px #ff3b3b1a;
+  }
+  
+  /* Seção introdução com imagem */
+  .intro {
+    background: #2922b8;
+background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: 1px 1px 5px #000;
+  }
+  
+  .intro div {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 12px;
+    border: 2px solid #fff;
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  /* Habilidades */
+  .habilidades {       
+    background-color: #e3f2fd;
+  }
+  
+  .habilidades ul {
+    list-style: square;
+    padding-left: 20px;
+  }
+  
+  .habilidades li {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .azul {
+    color: #1565c0;
+    font-weight: bold;
+  }
+  
+  .verde {
+    color: #2e7d32;
+    font-weight: bold;
+  }
+  
+  /* Projetos */
+  .projetos {
+    background: #020024;
+background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgb(0, 0, 0) 100%);
+  
+  .projeto {
+    background-color: #ffffff;
+    border: px dashed #b700ff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius:22px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .projeto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(33, 33, 33, 0.3);
+  }
+  
+  .projeto a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .projeto a:hover {
+    color: #ad1457;
+  }
+  
+  /* Contato */
+  .contato {
+    background-color: #fff8e1;
+  }
+  
+  .contato form {
+    max-width: 500px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .contato label {
+    font-weight: bold;
+  }
+  
+  .contato input,
+  .contato textarea,
+  .contato select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+  
+  .contato button {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .contato button:hover {
+    background-color: #ef6c00;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #212121;
+    color: #ffffff;
+    text-align: center;
+    padding: 25px 10px;
+    font-size: 15px;
+    border-top: 4px solid #6a11cb;
+  }
+  
+  /* Títulos */
+  h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  
+  h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    color: #444;
+  }
+  
+  /* Separadores */
+  hr {
+    margin: 40px auto;
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    width: 90%;
+    border-radius: 4px;
+  }
+}                                                                                                                                                                                                                                                                                                                                                                                                       
