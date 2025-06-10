@@ -1,0 +1,22 @@
+# Site Flexbox - Stevão Severo Rodrigues
+
+## Tema escolhido
+Loja Militar Minimalista — com estilo "mercado negro", visual escuro, limpo e focado em uma experiência underground e tática.
+
+## Descrição do projeto
+Este projeto consiste em um site responsivo feito com CSS Flexbox e Grid, que simula uma loja de armas e equipamentos militares com visual minimalista e moderno.  
+O site possui as seguintes páginas e seções:
+
+- **Página principal:** lista de produtos com cards responsivos, contendo imagens, descrições, preços e botões de compra.  
+- **Header:** título com estilo militar e tema escuro.  
+- **Footer:** rodapé simples com direitos autorais.  
+- **Interações:** efeitos hover em cards e botões, além de layout que se adapta a diferentes tamanhos de tela.  
+
+## Tecnologias utilizadas
+- HTML5  
+- CSS3 (Flexbox e Grid)  
+- (Opcional) JavaScript para interações futuras
+
+## Visual do site
+-gif) *(Opcional)*
+
