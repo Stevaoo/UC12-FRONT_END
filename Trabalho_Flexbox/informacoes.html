@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes da Arma</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark">
+  <header class="topo">
+    <div class="logo">🦅 FORSUL</div>
+    <a href="index.html" class="voltar">⬅️ Voltar</a>
+  </header>
+
+  <main class="conteudo">
+    <section id="detalhes-produto">
+      <h1 id="titulo"></h1>
+      <img id="imagem" src="" alt="Imagem da arma">
+      <p id="descricao"></p>
+      <p><strong id="preco"></strong></p>
+      <button class="comprar">Comprar agora</button>
+    </section>
+  </main>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const produto = params.get("produto");
+
+    const produtos = {
+      "pistola-bersa": {
+        titulo: "Pistola Bersa BP40cc",
+        imagem: "FTS/PISTOLA1.jfif",
+        descricao: "Compacta, ideal para porte velado. Calibre .40 S&W, confiabilidade garantida.",
+        preco: "R$5.699,90"
+      },
+      "espingarda-montenegra": {
+        titulo: "Espingarda CBC MonteNegro",
+        imagem: "FTS/ESPINGARDA1.jfif",
+        descricao: "Espingarda tradicional calibre 36, ideal para tiro esportivo e caça.",
+        preco: "R$2.334,45"
+      },
+      "rifle-rossi": {
+        titulo: "Rifle Rossi Puma .38",
+        imagem: "FTS/RIFLE.jfif",
+        descricao: "Rifle de ação por alavanca, calibre .38, ideal para colecionadores e esportistas.",
+        preco: "R$5.270,00"
+      },
+      "carabina-gamo": {
+        titulo: "Carabina de Pressão Gamo",
+        imagem: "FTS/CARABINA.jfif",
+        descricao: "Modelo de alta precisão para tiro esportivo. Calibre 5.5mm.",
+        preco: "R$1.200,00"
+      },
+      "pistola-taurus": {
+        titulo: "Pistola Taurus G2C Cal. 9mm",
+        imagem: "FTS/PISTOLA TAUROS.jfif",
+        descricao: "Compacta, moderna, confiável. Ideal para defesa pessoal.",
+        preco: "R$4.224,00"
+      },
+      "taurus-889": {
+        titulo: "Revólver Taurus RT 889",
+        imagem: "FTS/REVOLVER.jfif",
+        descricao: "Robusto e preciso, indicado para defesa e colecionadores.",
+        preco: "R$5.250,00"
+      },
+      "espingarda-boito": {
+        titulo: "Espingarda Boito Pump",
+        imagem: "FTS/ESPINGARDA BOITO.png",
+        descricao: "Espingarda de repetção, potente e confiável. Calibre 12.",
+        preco: "R$2.240,00"
+      },
+      "pistola-glock": {
+        titulo: "Pistola Glock G25",
+        imagem: "FTS/PISTOLA0.jfif",
+        descricao: "Modelo consagrado mundialmente, calibre .380 ACP.",
+        preco: "R$6.750,00"
+      },
+      "fuzil-fal": {
+        titulo: "Fuzil FN FAL 7,62mm",
+        imagem: "FTS/fuzil fal.jfif",
+        descricao: "Fuzil de batalha clássico, usado em operações militares.",
+        preco: "R$14.760,00"
+      },
+      "fuzil-m4": {
+        titulo: "Fuzil Colt M4 5,56mm NATO",
+        imagem: "FTS/m4.jfif",
+        descricao: "Compacto, leve e com alta taxa de disparo. Modelo tático de elite.",
+        preco: "R$12.870,00"
+      }
+    };
+
+    const p = produtos[produto];
+    if (p) {
+      document.getElementById("titulo").textContent = p.titulo;
+      document.getElementById("imagem").src = p.imagem;
+      document.getElementById("imagem").alt = p.titulo;
+      document.getElementById("descricao").textContent = p.descricao;
+      document.getElementById("preco").textContent = p.preco;
+    } else {
+      document.getElementById("detalhes-produto").innerHTML = "<h1>Produto não encontrado.</h1>";
+    }
+  </script>
+</body>
+</html>
