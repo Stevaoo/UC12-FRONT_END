@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Ex. 5 – Texto ao Digitar</title>
+</head>
+<body>
+  <input type="text" id="inputTexto" placeholder="Digite algo...">
+  <p id="saidaTexto"></p>
+
+  <script>
+    const input = document.getElementById("inputTexto");
+    const saida = document.getElementById("saidaTexto");
+
+    input.addEventListener("keyup", () => {
+      saida.textContent = input.value;
+    });
+  </script>
+</body>
+</html>

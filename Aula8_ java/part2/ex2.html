@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Ex. 4 – Mudança de Cor</title>
+  <style>
+    #box {
+      width: 200px;
+      height: 200px;
+      background-color: gray;
+    }
+  </style>
+</head>
+<body>
+  <div id="box"></div>
+
+  <script>
+    const box = document.getElementById("box");
+
+    box.addEventListener("mouseover", () => {
+      box.style.backgroundColor = "blue";
+    });
+
+    box.addEventListener("mouseout", () => {
+      box.style.backgroundColor = "gray";
+    });
+  </script>
+</body>
+</html>

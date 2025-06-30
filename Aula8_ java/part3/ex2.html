@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Ex. 7 – Modo Claro/Escuro</title>
+  <style>
+    body.light {
+      background-color: white;
+      color: black;
+    }
+    body.dark {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body class="light">
+  <button onclick="mudarTema()">Mudar tema</button>
+
+  <script>
+    function mudarTema() {
+      document.body.classList.toggle("dark");
+      document.body.classList.toggle("light");
+    }
+  </script>
+</body>
+</html>
